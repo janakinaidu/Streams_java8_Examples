@@ -1,18 +1,16 @@
-package com.naidu.examples;
-
-import java.util.List;
+package com.naidu;
 
 public class Student {
 
 	private int id;
 	private String name;
-	private List<Course> courses;
+	private long salary;
 
-	public Student(int id, String name, List<Course> courses) {
+	public Student(int id, String name, long salary) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.courses = courses;
+		this.salary = salary;
 	}
 
 	public int getId() {
@@ -31,17 +29,17 @@ public class Student {
 		this.name = name;
 	}
 
-	public List<Course> getCourses() {
-		return courses;
+	public long getSalary() {
+		return salary;
 	}
 
-	public void setCourses(List<Course> courses) {
-		this.courses = courses;
+	public void setSalary(long salary) {
+		this.salary = salary;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", courses=" + courses
+		return "Student [id=" + id + ", name=" + name + ", salary=" + salary
 				+ "]";
 	}
 
